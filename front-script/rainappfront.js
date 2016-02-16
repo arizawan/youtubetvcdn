@@ -63,7 +63,8 @@ $(function() {
             wmode: "transparent", // note: transparent maintains z-index, but disables GPU acceleration
             swfobjectURL: "http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js",
             loadSWFObject: true, // if you include swfobject, set to false
-            iframed: true, // iframed can be: true, false; if true, but not supported, degrades to flash
+            iframed: false, // iframed can be: true, false; if true, but not supported, degrades to flash
+            protocol: 'https',
             onPlay: function(id) {}, // after the play method is called
             onPause: function() {}, // after the pause method is called
             onStop: function() {}, // after the player is stopped
